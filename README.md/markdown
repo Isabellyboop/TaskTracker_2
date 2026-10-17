@@ -1,4 +1,34 @@
 ## Documentação do TaskTracker
 
- O documento completo de planejamento do projeto está disponível em:
-* [Acessar Planejamento do Projeto (DOCS)](https://docs.google.com/document/d/1nu18XMsco4xrMxYKYSVCJDb98IfJz3JbE-0dh4BNk0U/edit?usp=sharing)
+#  TaskTracker - Gerenciador de Tarefas (CLI)
+
+##  Descrição Funcional
+O **TaskTracker** é uma aplicação em linha de comando (CLI) desenvolvida em Python para gerenciamento simples e eficiente de tarefas individuais. A ferramenta permite ao usuário cadastrar novas tarefas com validação estrita de campos obrigatórios (como títulos válidos e prioridades restritas) e listar todos os registros organizados visualmente no terminal.
+
+### Principais Funcionalidades:
+* **Menu de Navegação Interativo:** Interface contínua para escolha de ações no terminal.
+* **Cadastro de Tarefas com Validação:**
+  * **Título:** Obrigatório (rejeita entradas vazias ou compostas apenas por espaços).
+  * **Descrição:** Detalhamento livre da tarefa.
+  * **Prioridade:** Validação estrita (aceita exclusivamente `"Alta"`, `"Média"`/`"Media"` e `"Baixa"`).
+  * **Data Limite:** Registro flexível da data de conclusão.
+  * **Status:** Definido automaticamente como `"Pendente"`.
+* **Listagem e Exibição:** Iteração legível e organizada de todas as tarefas cadastradas (com aviso claro em caso de lista vazia).
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+* **[Python 3.x](https://www.python.org/):** Linguagem principal utilizada na implementação da aplicação.
+* **[Git](https://git-scm.com/):** Sistema de controle de versão do código.
+* **[VS Code](https://code.visualstudio.com/):** Ambiente de desenvolvimento integrado (IDE).
+
+---
+
+## 🔧 Guia de Instalação e Execução
+
+### 1. Pré-requisitos
+Certifique-se de ter o **Python 3.x** e o **Git** instalados na sua máquina. Você pode verificar executando os comandos abaixo no terminal:
+
+```bash
+python --version
+git --version
